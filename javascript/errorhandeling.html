@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        onerror=exfoerr
+        var text1=""
+        function exfoerr(msg,url,line){
+            text1="Error Displayed\n\n"
+            text1+="Error: "+msg+"\n"
+            text1+="Url: "+url+"\n"
+            text1+="Line Number: "+line+"\n\n"
+            text1+="Click OK to Continue.\n\n"
+            alert(text1)
+            return true
+        }
+        
+        function display(){
+            addxlert("Click to Proceed !!")
+        }
+    </script>
+
+    <input type="button" value="View Message" onclick="display()" />
+</body>
+</html>

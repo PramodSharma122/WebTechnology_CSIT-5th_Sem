@@ -1,0 +1,26 @@
+<!-- write a js code display factorial number using function -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a=Number(prompt("Enter a number"))
+
+        function factorial(num){
+            if(num==0){
+                return 1;
+            }
+            else{
+                return factorial(num-1)*num
+            }
+        }
+        document.write("The factorial number is: "+factorial(a))
+    
+    </script>
+</body>
+</html>

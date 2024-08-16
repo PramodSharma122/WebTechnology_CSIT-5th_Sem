@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .button{
+            display: flex;
+            padding: 10px;
+            column-gap: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        First Number: <input type="text" id="first"><br><br>
+        Second Number: <input type="text" id="second"><br><br>
+        <div class="button">
+            <input type="button" value="Addition" onclick="data(); add()"><br><br>
+            <input type="button" value="Subtract" onclick="data(); sub()"><br><br>
+            <input type="button" value="Multiply" onclick="data(); mul()"><br><br>
+            <input type="button" value="Divide" onclick="data(); divide()"><br><br>
+        </div>
+        Result: <input type="text" id="result">
+    </form>
+    <script>
+    
+        function data(){
+            a=Number(document.getElementById("first").value);
+            b=Number(document.getElementById("second").value);
+        }
+        function add(){
+            var c= a+b;
+            document.getElementById("result").value=c;
+        }
+        function sub(){
+            var c= (a-b);
+            document.getElementById("result").value=c;
+        }
+        function mul(){
+            var c= (a*b);
+            document.getElementById("result").value=c;
+        }
+        function divide(){
+            var c= (a/b);
+            document.getElementById("result").value=c;
+        }
+    </script>
+</body>
+</html>

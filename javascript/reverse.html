@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a=Number(prompt("Enter a number"))
+        var s=0;
+        while(a>0){
+            var r=a%10;
+            var s=s*10+r;
+            a=parseInt(a/10);
+        }
+        document.write("The reverse is "+s);
+
+    </script>
+</body>
+</html>

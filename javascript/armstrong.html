@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a=Number(prompt("Enter a  three digit number"))
+        var s=0;
+        var t=a;
+        while(a>0){
+            var r=a%10;
+            var s=s+r*r*r;
+            a=parseInt(a/10);
+        }
+        if(s==t){
+            document.write("This is a Armstrong.");
+        }
+        else{
+            document.write("This is not Armstrong.");
+        }
+
+    </script>
+</body>
+</html>

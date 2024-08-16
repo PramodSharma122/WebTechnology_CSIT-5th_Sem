@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime or composite</title>
+</head>
+<body>
+    <script>
+        var c=0;
+        var a=Number(prompt("Enter a number"))
+        for(i=2;i<=a-1;i++){
+            if(a%i==0){
+                c=c+i;
+                break;
+            }
+        }
+        if(c==0 && a>1){
+            document.write(a+" is Prime number")
+        }
+        else{
+            document.write(a+ " is Composite number")
+        }
+    </script>
+</body>
+</html>
